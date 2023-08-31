@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritik-PortFolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90;
+    background-color: rgb(18 18 62);;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(153, 153, 226);
+    font-size: 1.04rem;
+}
+.left{
+    font-size: 1.5rem;
+}
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+.firstsection > div{
+    width: 30%;
+}
+.leftsection{
+    font-size: 3rem;
+}
+.rightsection img{
+    width:80%;
+}
+.purple{
+    color:rgb(170, 107, 228);
+}
+#element{
+    color: rgb(170, 107, 228);
+}
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ritik-PortFolio</div>
+            <a class="right">
+                <ul>
+
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                    <!--
+                    <a href="/"><li>Home</li></a>
+                    <a href="/"><li>About</li></a>
+                    <a href="/"><li>Services</li></a>
+                    <a href="/"><li>Project</li></a>
+                    <a href="/"><li>Contect me</li></a>
+
+                    -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- content goes here -->
+        <section class="firstsection">
+            <div class="leftsection">
+               Hi, My Name Is <span class="purple">Ritik</span> 
+               <div>And I Am A Student Of BCA In Trinity Institute Of Professional Studies Dwarka</div>
+               <span id="element"></span>
+               <!--<div>and i am a passionate </div>
+               <div>web developer</div> -->
+            </div>
+            <div class="rightsection">
+                <img src="dev.png.jpeg"
+            </div>
+        </section>
+
+        <section class="sectionsecond">
+            <h1>Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Programmer', 'Fresher','...'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
